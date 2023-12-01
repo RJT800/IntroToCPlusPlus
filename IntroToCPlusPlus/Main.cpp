@@ -26,35 +26,40 @@ void printOutArrayItems(int array[], int i)
 
 int main()
 {
-	Character player;
+	Character player(100,12);
+	Character player2(100,14);
 
+	player.attack(player2);
+	std::cout << player2.getHealth();
 
-	int numbers[3] = { 1,2,3 };
-	int morenumbers[8] = { 3,4,62,3,5,7,74,4 };
-	printOutArrayItems(morenumbers, 3);
+	int numba = 30;
+	int* numba = &numba;
+	//int numbers[3] = { 1,2,3 };
+	//int morenumbers[8] = { 3,4,62,3,5,7,74,4 };
+	//printOutArrayItems(morenumbers, 3);
 
-	char name[] = { 'r','e','g' };
-	char name2[] = { 'r','e','g' };
+	//char name[] = { 'r','e','g' };
+	//char name2[] = { 'r','e','g' };
 	//char name3[] = { "reginald" };
 
 	//for (int i = 0; numbers[i] <= 2; i++)
-		std::cout << name;
-	int number = 2;
-	float decimal = 0.5f;
-	bool onOff = true;
-	char letter = 'a';
-	double bigDecimal = 0.9876542;
+	//	std::cout << name;
+	//int number = 2;
+	//float decimal = 0.5f;
+	//bool onOff = true;
+	//char letter = 'a';
+	//double bigDecimal = 0.9876542;
 
-	letter = 5;
+	//letter = 5;
 	//number = onOff;
 	//decimal = number;
 
-	float health = 100;
+	//float health = 100;
 
-	if (!health)
-	{
-		std::cout << "you dead";
-	}
+	//if (!health)
+	//{
+	//	std::cout << "you dead";
+	//}
 	//std::cout << numbers[0] << std::endl;
 	//std::cout << "Reginald"<<"Thompson" << std::endl;
 

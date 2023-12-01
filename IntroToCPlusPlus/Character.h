@@ -3,10 +3,16 @@
 class Character
 {
 public:
+	Character();
+	Character(float health, float damage);
+
+
+	void attack(Character& opponent);
 	void takeDamage(float damage);
 
 
 	float getHealth() { return m_health; }
+	float getDamage() { return m_damage; }
 private:
 	/// <summary>
 	/// 
