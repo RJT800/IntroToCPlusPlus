@@ -9,7 +9,7 @@ public:
 
 	void attack(Character& opponent);
 	void takeDamage(float damage);
-
+	void printCharacterStats();
 
 	float getHealth() { return m_health; }
 	float getDamage() { return m_damage; }

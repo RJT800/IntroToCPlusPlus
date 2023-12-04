@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Character.h"
 
 /// <summary>
@@ -28,3 +29,11 @@ void Character::takeDamage(float damage)
 {
 	m_health -= damage;
 }
+
+
+void Character::printCharacterStats()
+{
+	std::cout << "health" << this->getHealth() << std::endl;
+	std::cout << "damage" << this->getDamage() << std::endl;
+}
+
