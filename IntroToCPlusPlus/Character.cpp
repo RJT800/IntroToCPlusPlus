@@ -10,15 +10,16 @@ Character::Character()
 	m_damage = 0;
 }
 
-
-
+/// <param name="name">the name of the actor</param>
 /// <param name="health">the amount of damage they can take before dying</param>
 /// <param name="damage">the amount of damage they can deal to something's health by attacking</param>
-Character::Character(float health, float damage)
+Character::Character(const char* name, float health, float damage)
 {
+	m_name = name;
 	m_health = health;
 	m_damage = damage;
 }
+
 
 void Character::attack(Character& opponent)
 {

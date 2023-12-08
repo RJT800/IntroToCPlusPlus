@@ -17,7 +17,7 @@ void countUpTo(int numba)
 		std::cout << i << std::endl;
 }
 
-void printOutArrayItems(int array[], int i)
+void printNumbers(int array[], int i)
 {
 	for (int j = 0; j < i;j++)
 		std::cout << array[j] << std::endl;
@@ -63,6 +63,7 @@ Character* createACharacter()
 {
 	float health;
 	float damage;
+	char* name;
 
 	std::cout << "give health" << std::endl;
 	std::cin >> health;
@@ -70,7 +71,11 @@ Character* createACharacter()
 	std::cout << "give damage" << std::endl;
 	std::cin >> damage;
 
-	Character* character = new Character(health, damage);
+	std::cout << "give name" << std::endl;
+	std::cin >> name;
+
+
+	Character* character = new Character(name, health, damage);
 
 
 	return character;
@@ -83,11 +88,26 @@ Character* createACharacter()
 //	return;
 //}
 
+void addIntegerToArray(int firstArray[],int newAddedNumber)
+{
+
+	int* tempArray = firstArray;
+
+	new[] int newArray = tempArray;
+
+		//for (int j = 0; j < i; j++)
+		//{
+
+		//}
+}
+
 int main()
 {
 
 	Character* player = createACharacter();
 	player->printCharacterStats();
+
+
 
 	//printCharacterStats(player);
 	//std::cout << "health" << player->getHealth()<< std::endl;
